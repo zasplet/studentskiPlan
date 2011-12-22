@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Naziv:</b>
+  <%= @semester.naziv %>
+</p>
+
+<p>
+  <b>Datumod:</b>
+  <%= @semester.datumOd %>
+</p>
+
+<p>
+  <b>Datumdo:</b>
+  <%= @semester.datumDo %>
+</p>
+
+
+<%= link_to 'Edit', edit_semester_path(@semester) %> |
+<%= link_to 'Back', semesters_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Naziv:</b>
+  <%= @predmet.naziv %>
+</p>
+
+<p>
+  <b>Predavatelj:</b>
+  <%= @predmet.predavatelj %>
+</p>
+
+<p>
+  <b>Datumod:</b>
+  <%= @predmet.datumOd %>
+</p>
+
+<p>
+  <b>Datumdo:</b>
+  <%= @predmet.datumDo %>
+</p>
+
+<p>
+  <b>Cas:</b>
+  <%= @predmet.cas %>
+</p>
+
+<p>
+  <b>Opis:</b>
+  <%= @predmet.opis %>
+</p>
+
+<p>
+  <b>Semester:</b>
+  <%= @predmet.semester_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_predmet_path(@predmet) %> |
+<%= link_to 'Back', predmets_path %>

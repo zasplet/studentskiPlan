@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  naziv: MyString
+  predavatelj: MyString
+  datumOd: 2011-12-22
+  datumDo: 2011-12-22
+  cas: 2011-12-22 12:16:11
+  opis: MyString
+  semester_id: 1
+
+two:
+  naziv: MyString
+  predavatelj: MyString
+  datumOd: 2011-12-22
+  datumDo: 2011-12-22
+  cas: 2011-12-22 12:16:11
+  opis: MyString
+  semester_id: 1

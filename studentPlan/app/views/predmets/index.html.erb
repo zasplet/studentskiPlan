@@ -1,0 +1,35 @@
+<h1>Listing predmets</h1>
+
+<table>
+  <tr>
+    <th>Naziv</th>
+    <th>Predavatelj</th>
+    <th>Datumod</th>
+    <th>Datumdo</th>
+    <th>Cas</th>
+    <th>Opis</th>
+    <th>Semester</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @predmets.each do |predmet| %>
+  <tr>
+    <td><%= predmet.naziv %></td>
+    <td><%= predmet.predavatelj %></td>
+    <td><%= predmet.datumOd %></td>
+    <td><%= predmet.datumDo %></td>
+    <td><%= predmet.cas %></td>
+    <td><%= predmet.opis %></td>
+    <td><%= predmet.semester_id %></td>
+    <td><%= link_to 'Show', predmet %></td>
+    <td><%= link_to 'Edit', edit_predmet_path(predmet) %></td>
+    <td><%= link_to 'Destroy', predmet, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Predmet', new_predmet_path %>

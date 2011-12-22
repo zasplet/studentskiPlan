@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  naziv: MyString
+  datumOd: 2011-12-22
+  datumDo: 2011-12-22
+
+two:
+  naziv: MyString
+  datumOd: 2011-12-22
+  datumDo: 2011-12-22

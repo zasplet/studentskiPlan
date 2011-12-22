@@ -1,0 +1,45 @@
+<%= form_for(@predmet) do |f| %>
+  <% if @predmet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@predmet.errors.count, "error") %> prohibited this predmet from being saved:</h2>
+
+      <ul>
+      <% @predmet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :naziv %><br />
+    <%= f.text_field :naziv %>
+  </div>
+  <div class="field">
+    <%= f.label :predavatelj %><br />
+    <%= f.text_field :predavatelj %>
+  </div>
+  <div class="field">
+    <%= f.label :datumOd %><br />
+    <%= f.date_select :datumOd %>
+  </div>
+  <div class="field">
+    <%= f.label :datumDo %><br />
+    <%= f.date_select :datumDo %>
+  </div>
+  <div class="field">
+    <%= f.label :cas %><br />
+    <%= f.time_select :cas %>
+  </div>
+  <div class="field">
+    <%= f.label :opis %><br />
+    <%= f.text_field :opis %>
+  </div>
+  <div class="field">
+    <%= f.label :semester_id %><br />
+    <%= f.number_field :semester_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
